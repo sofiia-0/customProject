@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="customProject" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jK-Xq-GII">
+                    <rect key="frame" x="175.66666666666666" y="203.33333333333334" width="42" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSD-PK-zUg">
+                    <rect key="frame" x="153" y="408.66666666666669" width="87" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                    <connections>
+                        <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="dpt-LB-g2U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rd8-c6-gFb">
+                    <rect key="frame" x="120.66666666666669" y="300" width="152" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Forgot Password" cornerStyle="capsule">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" systemColor="tableCellBlueTextColor"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="forgotPasswordAction:" destination="-1" eventType="touchUpInside" id="3UP-Lk-xKj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRB-aq-cMd">
+                    <rect key="frame" x="163" y="248" width="67" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="home" cornerStyle="capsule">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" systemColor="tableCellBlueTextColor"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="homeAction:" destination="-1" eventType="touchUpInside" id="jhP-UC-Tma"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3jK-Xq-GII" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-212.5" id="NQV-kR-8ae"/>
+                <constraint firstItem="3jK-Xq-GII" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-212.5" id="Uqy-xw-eGi"/>
+                <constraint firstItem="Rd8-c6-gFb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XQN-tA-xCi"/>
+                <constraint firstItem="PSD-PK-zUg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i7K-kx-zuE"/>
+                <constraint firstItem="Rd8-c6-gFb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-108.5" id="iMx-kU-wT4"/>
+                <constraint firstItem="3jK-Xq-GII" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rCn-f4-rbP"/>
+                <constraint firstItem="3jK-Xq-GII" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sDZ-a0-x69"/>
+                <constraint firstItem="PSD-PK-zUg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vpL-CY-gDS"/>
+            </constraints>
+            <point key="canvasLocation" x="78.625954198473281" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
